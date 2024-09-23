@@ -4,22 +4,40 @@
 <head>
     <title>Fall Weather Forecast</title>
     <!-- Link to external stylesheet -->
+     <link href = "styles.css" rel = "external-stylesheet">
 
 
     <!-- Embedded styles will go here -->
+    <style>
+        .day{
+            background-color: brown;
+            color:beige
+        }
+        .forecast {
+            font-style:italic
+        }
+        #curr-day{
+            font-size: large;
+        }
+     </style>
 
 </head>
 
 <body>
-    <h1>Fall Weather Forecast</h1>
+     <!-- Inline styling -->
+    <h1 style = "color:brown;">Fall Weather Forecast</h1>
     <div class="forecast">
-        <p class="day">Monday: Sunny, 60°F</p>
+        <p id = "curr-day" class="day">Monday: Sunny, 60°F</p>
+        <p class="note">Have a great Monday!</p>
         <p class="day">Tuesday: Cloudy, 55°F</p>
+        <p class="note">Have a great Tuesday!</p>
         <p class="day">Wednesday: Rainy, 50°F</p>
+        <p class="note">Have a great Wednesday!</p>
     </div>
+    <p>Check back soon for the next 3 days</p>
 
-    <!-- Example of where inline styles can be added -->
-    <footer style="text-align: center;">Last updated: September 22</footer>
+     <!-- Inline styling -->
+    <footer style="text-align: center; background-color:beige;">Last updated: September 22</footer>
 </body>
 
 </html>
